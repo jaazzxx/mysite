@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-overlay: rgba(0, 0, 0, 0.7); /* Затемнение фона */
-            --card-bg: rgba(10, 10, 10, 0.6); /* Полупрозрачные карточки */
+            --bg-overlay: rgba(0, 0, 0, 0.7); 
+            --card-bg: rgba(10, 10, 10, 0.6);
             --border: rgba(255, 255, 255, 0.1);
             --text-main: #ffffff;
             --text-muted: #888888;
@@ -35,7 +35,6 @@
             overflow-x: hidden;
         }
 
-        /* --- ТВОЙ ФОН --- */
         .background-layer {
             position: fixed;
             top: 0;
@@ -45,11 +44,9 @@
             background: url('bg.gif') no-repeat center center;
             background-size: cover;
             z-index: -2;
-            /* Делаем ч/б и темнее, чтобы текст читался */
             filter: grayscale(100%) brightness(0.4);
         }
 
-        /* Шум поверх фона для стиля */
         .noise-overlay {
             position: fixed;
             top: 0;
@@ -62,7 +59,6 @@
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
         }
 
-        /* Навигация */
         .nav-container {
             position: fixed;
             top: 30px;
@@ -98,7 +94,6 @@
                 color: #fff;
             }
 
-        /* Контент */
         .wrapper {
             width: 100%;
             max-width: 850px;
@@ -131,10 +126,9 @@
             }
         }
 
-        /* Карточки */
         .card {
             background: var(--card-bg);
-            backdrop-filter: blur(12px); /* Эффект стекла */
+            backdrop-filter: blur(12px);
             border: 1px solid var(--border);
             border-radius: 18px;
             padding: 25px;
@@ -178,7 +172,6 @@
                 color: #000;
             }
 
-        /* Копирование */
         .crypto-item {
             grid-column: span 3;
             flex-direction: row;
@@ -193,7 +186,6 @@
             font-size: 13px;
         }
 
-        /* Уведомление */
         #toast {
             position: fixed;
             bottom: 30px;
@@ -301,4 +293,5 @@
         }
     </script>
 </body>
+
 </html>
